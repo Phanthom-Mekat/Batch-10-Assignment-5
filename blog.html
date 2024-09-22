@@ -1,0 +1,96 @@
+<!DOCTYPE html  >
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+
+    <!-- tailwind and daisy ui cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google fonts cdn   -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <script>
+    tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'primary': '#111111',
+              'btn':'#B4F461',
+            },
+          },
+        },
+      }
+    </script>
+
+    <style>
+        .lexend{
+        font-family: "Lexend", sans-serif;
+        font-optical-sizing: auto;
+        }
+    </style>
+
+</head>
+<body class="lexend">
+    <header class="bg-[#F9F7F3] mb-20">
+        <nav class="md:w-11/12 mx-auto  flex items-center justify-between md:p-6 md:pb-12 p-2 pt-4 pb-10">
+            <button class="btn  bg-btn px-8 font-medium text-xl">
+                <a href="index.html">Home</a>
+            </button>
+            <div class="flex items-center space-x-2">
+                <img class="" src="assets/logo.png" alt="">
+                <p class="font-medium md:text-xl text-primary ">Donate Bangladesh</p>
+            </div>
+            <div class="flex items-center space-x-2">
+                <img src="assets/coin.png" alt="">
+                <p class="text-primary/70 text-xl font-light">
+                    <span>5500</span> BDT
+                </p>
+            </div>
+        </nav>
+    </header>
+    <main class="w-10/12 mx-auto ">
+        <h1 class="text-3xl font-bold">Important Faq 
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-9 font-black animate-bounce inline-block">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+              </svg>
+              
+        </h1>
+
+        <div class="join join-vertical w-full mt-10">
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4"  />
+              <div class="collapse-title text-xl font-medium">How can I donate to the Flood Relief in Noakhali?</div>
+              <div class="collapse-content">
+                <p>You can contribute directly by entering the amount <br> you wish to donate and clicking the "Donate" button.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">Where will my donation for Feni's flood relief be used?</div>
+              <div class="collapse-content">
+                <p>Your donation will be used to provide emergency aid, including food, water,<br> and medical supplies, to those affected by the floods in Feni.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">How can my donation help the injured from the Quota Movement?</div>
+              <div class="collapse-content">
+                <p>Your contribution will support medical treatments, rehabilitation, and essential <br> care for individuals injured during the Quota Movement.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">Is there a minimum donation amount?</div>
+              <div class="collapse-content">
+                <p>No, every donation, big or small, is appreciated <br>and makes a significant difference in relief efforts.</p>
+              </div>
+            </div>
+          </div>
+    </main>
+</body>
+</html>
