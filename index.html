@@ -54,25 +54,25 @@
                 </p>
             </div>
         </nav>
-        <div class="flex bg-white/60  justify-center gap-3 mb-10 p-10 backdrop-blur-md ">
-            <button class="btn  bg-btn px-8 font-medium text-xl">
-                <a href="">Donation</a>
+        <div class="flex bg-white/60  justify-center gap-3 mb-10 p-10 backdrop-blur-md " >
+            <button class="btn bg-btn  px-8 font-medium text-xl" id="d-btn" >
+                <a href="#x" id="donation-btn">Donation</a>
             </button>
-            <button class="btn  btn-outline px-8 font-medium text-xl text-primary/70">
-                <a href="">History</a>
+            <button class="btn  btn-outline px-8 font-medium text-xl text-primary/70" id="h-btn">
+                <a href="#r" id="history-btn">History</a>
             </button>
         </div>
     </header>
 
     <main>
 
-        <section>
+        <section id="donation-section-view" class="">
 
             <section class="w-10/12 mx-auto border p-8 rounded-2xl mb-10">
-                <div class="flex gap-10 ">
+                <div class="md:flex gap-10 ">
                     <img src="assets/noakhali.png" alt="">
                     <div class="space-y-7">
-                        <p class="flex gap-2 w-44 bg-primary/5 p-5 py-1 rounded-lg text-primary/70 text-xl font-light">
+                        <p class="flex gap-2 w-44 bg-primary/5 p-5 py-1 rounded-lg text-primary/70 text-xl font-light mt-2">
                             <img src="assets/coin.png" alt="">
                             <span>75000 </span> BDT
                         </p>
@@ -91,10 +91,10 @@
             </section>
                  <!-- feni -->
             <section class="w-10/12 mx-auto border p-8 rounded-2xl mb-10">
-                <div class="flex gap-10 ">
+                <div class="md:flex gap-10 ">
                     <img src="assets/feni.png" alt="">
                     <div class="space-y-7">
-                        <p class="flex gap-2 w-44 bg-primary/5 p-5 py-1 rounded-lg text-primary/70 text-xl font-light">
+                        <p class="flex gap-2 w-44 bg-primary/5 p-5 py-1 rounded-lg text-primary/70 text-xl font-light mt-2">
                             <img src="assets/coin.png" alt="">
                             <span>700 </span> BDT
                         </p>
@@ -113,10 +113,10 @@
             </section>
                 <!-- qouta  -->
             <section class="w-10/12 mx-auto border p-8 rounded-2xl mb-10">
-                <div class="flex gap-10 ">
+                <div class="md:flex gap-10 ">
                     <img src="assets/quota-protest.png" alt="">
                     <div class="space-y-7">
-                        <p class="flex gap-2 w-44 bg-primary/5 p-5 py-1 rounded-lg text-primary/70 text-xl font-light">
+                        <p class="flex gap-2 w-44 bg-primary/5 p-5 py-1 rounded-lg text-primary/70 text-xl font-light mt-2">
                             <img src="assets/coin.png" alt="">
                             <span>7000 </span> BDT
                         </p>
@@ -133,6 +133,9 @@
                     </div>
                 </div>
             </section>
+
+
+
             <dialog id="my_modal_1" class="modal">
                 <div class="modal-box flex justify-center flex-col items-center">
                   <h3 class="text-xl text-lime-400 font-bold mb-2">Congrates!</h3>
@@ -148,10 +151,17 @@
                 </div>
               </dialog>
         </section>
+
+        <div id="transaction-history" class="text-center w-10/12 mx-auto overflow-y-auto h-72 rounded-lg p-4 hidden">
+            <h4 class="text-lg font-bold mb-2">Transaction History</h4>
+            <hr class="border-yellow-400 mb-4">
+        </div>
+
     </main>
 
     <footer class="bg-[#F9F7F3] p-20 mt-20">
         
     </footer>
+    <script src="js/index.js"></script>
 </body>
 </html>
