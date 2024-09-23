@@ -1,4 +1,3 @@
-
 // toggle code 
 function showSectionById(id){
     document.getElementById('donation-section-view').classList.add('hidden');
